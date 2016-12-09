@@ -21,7 +21,7 @@ public class Application {
     }
 
   public static void main(String[] args) {
-      String type = args!=null?args[0]:null;
+      String type = args.length>0?args[0]:null;
       ApplicationContext context = null;
       if("ANNOTATION".equals(type)) {
           logger.debug("loading annotation config application context");
